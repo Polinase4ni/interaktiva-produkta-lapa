@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #faf7ff;
+  color: #222;
+}
+
+.top, .bottom {
+  background: #ffffff;
+  color: rgb(43, 43, 43);
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.top {
+  border-bottom: 3px solid #46376e;
+}
+
+.bottom {
+  border-top: 3px solid #46376e;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.sub {
+  margin: 6px 0 0;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.wrap {
+  width: 86%;
+  max-width: 900px;
+  margin: 18px auto;
+  display: grid;
+  gap: 14px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e6e0f2;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.field {
+  width: 270px;
+  max-width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #d9d2eb;
+  border-radius: 8px;
+  outline: none;
+  background: #fbfaff;
+}
+
+.field:focus {
+  border-color: #5b4b8a;
+  box-shadow: 0 0 0 3px rgba(91, 75, 138, 0.18);
+  background: #ffffff;
+}
+
+.row {
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px dashed #d9d2eb;
+  border-radius: 10px;
+  background: #f5f1ff;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.row label {
+  margin: 0;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #6d5bd0;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #5f4dc3;
+}
+
+.result {
+  margin-top: 12px;
+  min-height: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e6e0f2;
+  background: #fbfaff;
+  font-weight: bold;
+}
+
+.result.ok {
+  border-color: #2f855a;
+  background: #eefbea;
+  color: #1f6d2f;
+}
+
+.result.err {
+  border-color: #c92a2a;
+  background: #fff0f0;
+  color: #a61e1e;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.list li {
+  margin: 6px 0;
+}
+
+body.highlight {
+  background: #f2fff7;
+}
+
+body.highlight .top,
+body.highlight .bottom {
+  background: #2f855a;
+  border-color: #1f6d2f;
+}

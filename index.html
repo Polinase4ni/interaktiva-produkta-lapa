@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interneta veikals</title>
+  <link rel="stylesheet" href="style.css?8" />
+</head>
+<body>
+  <header class="top">
+    <h1>Mini interneta veikals</h1>
+    <p class="sub">Izvēlies preci, daudzumu un piegādi — redzi rezultātu uzreiz.</p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Pasūtījuma dati</h2>
+
+      <label for="product">Prece:</label>
+      <select id="product" class="field">
+        <option value="t_krekls">T-krekls</option>
+        <option value="kapuce">Hūdijs</option>
+        <option value="kruze">Krūze</option>
+      </select>
+
+      <label for="qty">Daudzums:</label>
+      <input id="qty" class="field" type="number" min="1" placeholder="Piemēram: 2" />
+
+      <label for="shipping">Piegāde:</label>
+      <select id="shipping" class="field">
+        <option value="pakomats">Pakomāts (2.50 €)</option>
+        <option value="kurjers">Kurjers (5.00 €)</option>
+        <option value="sanemt">Saņemt veikalā (0.00 €)</option>
+      </select>
+
+      <div class="row">
+        <input id="promo" type="checkbox" />
+        <label for="promo">Promo: -10% (ja atzīmēts)</label>
+      </div>
+
+      <button id="calcBtn" type="button">Aprēķināt cenu</button>
+
+      <p id="result" class="result"></p>
+    </section>
+
+    <section class="card">
+      <h2>Info</h2>
+      <ul class="list">
+        <li>Rezultāts tiek aprēķināts bez lapas pārlādes.</li>
+        <li>Ja ievade nav pareiza, parādās kļūdas ziņa.</li>
+        <li>Ja summa ir liela, lapa maina stilu (papildfunkcija).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bottom">
+    <p>projekts</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
